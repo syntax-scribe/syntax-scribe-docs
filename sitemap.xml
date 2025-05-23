@@ -9,7 +9,19 @@
          <lastmod>2025-05-23</lastmod>
     </url>
     <url>
+         <loc>https://syntax-scribe.github.io/syntax-scribe-docs/guides/</loc>
+         <lastmod>2025-05-23</lastmod>
+    </url>
+    <url>
          <loc>https://syntax-scribe.github.io/syntax-scribe-docs/license/</loc>
+         <lastmod>2025-05-23</lastmod>
+    </url>
+    <url>
+         <loc>https://syntax-scribe.github.io/syntax-scribe-docs/guides/mkdocs-deploy-guide/</loc>
+         <lastmod>2025-05-23</lastmod>
+    </url>
+    <url>
+         <loc>https://syntax-scribe.github.io/syntax-scribe-docs/guides/use-github-actions-to-deploy-to-github-pages/</loc>
          <lastmod>2025-05-23</lastmod>
     </url>
 </urlset>
