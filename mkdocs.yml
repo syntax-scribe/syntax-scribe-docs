@@ -1,0 +1,44 @@
+site_name: SyntaxScribe
+site_url: https://syntax-scribe.github.io/syntax-scribe-docs/
+repo_url: https://github.com/syntax-scribe/syntax-scribe-docs
+repo_name: syntax-scribe/syntax-scribe-docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - toc.integrate
+    - header.autohide
+    - content.action.edit
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - footnotes
+  - tables
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.highlight
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  # - CLI Reference: cli-reference.md
+  # - Configuration: configuration.md
+  # - Examples: examples.md
+  # - Guides & Tutorials: guides.md
+  # - Troubleshooting: troubleshooting.md
+  # - Changelog: changelog.md
+  - License: license.md
