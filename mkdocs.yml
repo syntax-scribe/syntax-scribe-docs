@@ -38,7 +38,7 @@ nav:
   # - CLI Reference: cli-reference.md
   # - Configuration: configuration.md
   # - Examples: examples.md
-  # - Guides & Tutorials: guides.md
+  - Guides & Tutorials: guides.md
   # - Troubleshooting: troubleshooting.md
   # - Changelog: changelog.md
   - License: license.md
