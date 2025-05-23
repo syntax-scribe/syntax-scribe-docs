@@ -45,7 +45,7 @@ It will **automatically terminate without notice** if the Licensee breaches any 
 
 ## 6. ⚖️ Governing Law
 
-This Agreement shall be governed by and construed under the laws of the **United States** and the **State of [Your State]**.
+This Agreement shall be governed by and construed under the laws of the **United States** and the **State of Virginia**.
 
 ---
 
