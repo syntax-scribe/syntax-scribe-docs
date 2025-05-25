@@ -6,6 +6,7 @@ This guide shows you how to automatically deploy your MkDocs site to GitHub Page
 
 - A GitHub repository with your MkDocs project
 - MkDocs configuration file (`mkdocs.yml`) in your repository root
+- GitHub Pages is enabled for your repo by selecting a source.  (Branch section of GitHub Pages settings. )
 
 ## Step 1: Configure Your MkDocs Site
 
@@ -15,6 +16,7 @@ Update your `mkdocs.yml` file with the correct site information:
 site_name: My Project Documentation
 site_url: https://<your-username>.github.io/<your-repo>/
 site_description: Description of your project
+edit_uri: edit/main/docs/
 
 # Optional: Add a theme for better appearance
 theme:
@@ -22,6 +24,8 @@ theme:
 ```
 
 **Replace** `<your-username>` with your GitHub username and `<your-repo>` with your repository name.
+
+In the edit_uri main = the branch you are deploying from and docs is the directory the site is in.
 
 ## Step 2: Create the GitHub Actions Workflow
 
@@ -108,12 +112,18 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 
-## Step 3: Enable GitHub Pages
+## Step 3: Enable GitHub Pages & Configure Branch Protection
 
 1. Go to your repository on GitHub
 2. Navigate to **Settings** → **Pages**
 3. Under **Source**, select **GitHub Actions**
 4. Save the settings
+
+5. Go to **Settings** → **Environments**** → **github-pages**
+6. Under Deployment branches, select one of:
+  All branches (if you want to allow any branch to deploy)
+  Protected branches only (then ensure your main branch is protected)
+  Selected branches (then add main to the list)
 
 ## Step 4: Deploy Your Site
 

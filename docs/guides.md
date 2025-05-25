@@ -1,4 +1,4 @@
-# Documentation Guides
+# Documentation Tutorials and Guides
 
 Welcome to our comprehensive collection of step-by-step guides for building, deploying, and maintaining documentation sites. Whether you're just getting started or looking to optimize your existing setup, these guides will help you create professional documentation that's easy to maintain and deploy.
 
