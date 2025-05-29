@@ -1,3 +1,9 @@
+---
+title: "Getting Started"
+author: "Patrick Wright"
+published_date: "05/01/2025"
+---
+
 # Getting Started with Syntax Scribe
 
 Welcome to Syntax Scribe, a powerful tool for automatically generating beautiful code documentation from your TypeScript and JavaScript projects. This guide will walk you through installation, basic usage, and creating your first documentation site.
@@ -64,17 +70,8 @@ syntax-scribe docs init -d "~/code/my-docs" -n "My Project Documentation" -l you
 - `-n, --name`: Display name for your documentation site
 - `-l, --license`: Your license key (required for MkDocs features)
 
-### Step 3: Add Navigation
 
-Generate intelligent navigation based on your project structure:
-
-```bash
-syntax-scribe docs nav -d "~/code/my-docs" -l your-license-key
-```
-
-This automatically analyzes your documentation structure and creates a logical navigation hierarchy in your `mkdocs.yml` file.
-
-### Step 4: Preview Your Site
+### Step 3: Preview Your Site
 
 Start a local development server to preview your documentation:
 
@@ -82,7 +79,31 @@ Start a local development server to preview your documentation:
 syntax-scribe docs serve -d "~/code/my-docs" -l your-license-key
 ```
 
+**What happens behind the scenes:**
+- Creates a `.venv` Python virtual environment in your project directory
+- Installs MkDocs, Material theme, and required plugins in the virtual environment
+- Uses MkDocs to serve your site locally
+
 Your site will be available at `http://localhost:8000` with live reloading for development.
+
+**Running the site independently:**
+If you want to run your documentation site again without using Syntax Scribe, you can use MkDocs directly:
+
+```bash
+# Navigate to your documentation project directory
+cd ~/code/my-docs
+
+# Activate the virtual environment
+source .venv/bin/activate
+
+# Run MkDocs serve
+mkdocs serve
+```
+
+To deactivate the virtual environment when you're done, simply run:
+```bash
+deactivate
+```
 
 ### Step 5: Build for Production
 
@@ -93,6 +114,12 @@ syntax-scribe docs build -d "~/code/my-docs" -l your-license-key
 ```
 
 The built site will be created in the `site/` directory, ready for hosting.
+
+You can also build using MkDocs directly after activating the virtual environment:
+```bash
+source .venv/bin/activate
+mkdocs build
+```
 
 ## Complete Example Workflow
 
@@ -111,12 +138,7 @@ syntax-scribe docs init \
   -n "CopilotKit Documentation" \
   -l your-license-key
 
-# 3. Generate navigation
-syntax-scribe docs nav \
-  -d "~/code/copilotkit-docs" \
-  -l your-license-key
-
-# 4. Preview locally
+# 3. Preview locally
 syntax-scribe docs serve \
   -d "~/code/copilotkit-docs" \
   -l your-license-key
@@ -129,6 +151,7 @@ After running the initialization commands, your project structure will look like
 ```
 copilotkit-docs/
 ├── mkdocs.yml           # MkDocs configuration
+├── .venv/               # Python virtual environment (created after first serve)
 ├── docs/                # Generated documentation
 │   ├── index.md         # Homepage
 │   ├── api/             # API documentation
@@ -153,6 +176,7 @@ copilotkit-docs/
 ├── my-project/          # Your source code (use for -s)
 └── my-project-docs/     # Documentation project
     ├── mkdocs.yml       # Use parent directory for init (-d)
+    ├── .venv/           # Virtual environment (auto-created)
     └── docs/            # Generated docs go here
 ```
 
@@ -191,6 +215,12 @@ For detailed deployment instructions, see the [MkDocs deployment documentation](
 **Local server not starting**
 - Ensure port 8000 is available (or specify different port)
 - Check that `mkdocs.yml` exists in the specified directory
+- If running MkDocs directly, make sure the virtual environment is activated
+
+**Virtual environment issues**
+- If `.venv` directory is missing, re-run `syntax-scribe docs serve` to recreate it
+- On Windows, use `.venv\Scripts\activate` instead of `source .venv/bin/activate`
+- Ensure Python 3.6+ is installed on your system
 
 ## Next Steps
 
@@ -212,6 +242,10 @@ Once you have your basic documentation site running:
 - [Material for MkDocs Documentation](https://squidfunk.github.io/mkdocs-material/)
 - [Material Theme Configuration](https://squidfunk.github.io/mkdocs-material/setup/)
 
+**Syntax Scribe Resources:**
+- [Advanced Configuration Options](https://syntax-scribe.github.io/syntax-scribe-docs/) 
+
 ---
 
 **Need help?** Check our troubleshooting section above or reach out to our support team with any questions about getting started with Syntax Scribe.
+
