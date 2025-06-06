@@ -32,6 +32,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.highlight
 
+copyright: |-
+  <a href="https://syntaxscribe.com">Syntax Scribe</a>
+
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
