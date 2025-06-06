@@ -7,7 +7,7 @@ A step-by-step guide to get your MkDocs documentation site hosted on GitHub Page
 Before starting, ensure you have:
 
 - A GitHub repository containing your MkDocs project
-- Python 3.7+ installed on your system
+- Python 3.10+ installed on your system
 - Git configured with your GitHub credentials
 - A `mkdocs.yml` configuration file in your repository root
 - Documentation files in a `/docs` folder (or your configured docs directory)
