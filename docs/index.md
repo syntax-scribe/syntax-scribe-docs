@@ -13,7 +13,8 @@ npm install -g syntax-scribe
 syntax-scribe docs document -s "~/code/my-project" -d "~/code/my-docs/docs" -l your-license-key
 ```
 
-# Your docs are ready in ~/code/my-docs/docs
+Your docs are ready in ~/code/my-docs/docs
+
 That's it! Your documentation is now ready for MkDocs, GitHub Pages, or any static site generator.
 
 learn more [Get Started →](getting-started.md)
