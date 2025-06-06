@@ -22,20 +22,20 @@ learn more [Get Started →](getting-started.md)
 
 ## ✨ Key Features
 
-🔄 Zero Configuration - Works out of the box with sensible defaults
-⚡ Lightning Fast - Process thousands of files in seconds
-📱 Multiple Formats - Markdown, HTML, JSON output support
-🎯 Framework Agnostic - TypeScript, JavaScript, Vue, React, and more
-🤖 CI/CD Ready - Perfect for automated documentation workflows
-📚 MkDocs Compatible - Drop-in ready for popular documentation platforms
+-🔄 Zero Configuration - Works out of the box with sensible defaults
+-⚡ Lightning Fast - Process thousands of files in seconds
+-📱 Multiple Formats - Markdown, HTML, JSON output support
+-🎯 Framework Agnostic - TypeScript, JavaScript, Vue, React, and more
+-🤖 CI/CD Ready - Perfect for automated documentation workflows
+-📚 MkDocs Compatible - Drop-in ready for popular documentation platforms
 
 
 ---
 
 ## 🤝 Support & Community
 
-🐛 Found a bug? Report it on [GitHub](https://github.com/syntax-scribe/feedback/issues)
-💡 Feature request? Start a [discussion](https://github.com/syntax-scribe/feedback/discussions)
+-🐛 Found a bug? Report it on [GitHub](https://github.com/syntax-scribe/feedback/issues)
+-💡 Feature request? Start a [discussion](https://github.com/syntax-scribe/feedback/discussions)
 
 ---
 
